@@ -1,0 +1,23 @@
+int MaxSubSequenceSum(const int A[], int N)
+{
+	int thisSum, maxSum;
+
+	thisSum = maxSum = 0;
+
+	for (int i = 0; i < N; i++)
+	{
+		thisSum += A[i];
+
+		if (thisSum > maxSum)
+		{
+			maxSum = thisSum;
+		}
+		else if (thisSum < 0)
+		{
+			thisSum = 0;
+		}
+	}
+
+	return maxSum;
+
+}

@@ -1,5 +1,5 @@
 
-int MaxSubSequenceSumON3(const int A[], int N)
+int MaxSubSequenceSum(const int A[], int N)
 {
 	int thisSum, maxSum;
 
